@@ -38,6 +38,7 @@ dubbo配置参考文档：http://dubbo.apache.org/zh-cn/docs/user/references/xml
     或者
     <!-- 注册中心配置：协议为consul -->
     <dubbo:registry address="consul://地址:8500"/>
+    
    springboot配置方式：
     启动注解：@EnableDubbo(scanBasePackages = "xxx.xxx")
     配置文件：dubbo.registry.address=consul://127.0.0.1:8500
@@ -63,6 +64,6 @@ dubbo配置参考文档：http://dubbo.apache.org/zh-cn/docs/user/references/xml
     <dubbo:registry address="consul://地址:8500"/>
      <!-- 调用链配置 -->
     <dubbo:jaegerTrace traceopen="true" type="const" sampling="1" address="127.0.0.1:14268" />
-## 三、新增配置项
+
 
     
