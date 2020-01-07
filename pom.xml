@@ -15,17 +15,11 @@
     </modules>
 
     <dependencies>
-        <!-- 注册中心配置依赖 -->
+        <!-- 单独下载引入 https://jdsf-demo.s3.cn-north-1.jdcloud-oss.com/dubbo-jdsf-2.6.7-SNAPSHOT.jar -->
         <dependency>
-           <groupId>com.jdcloud.jdsf</groupId>
-           <artifactId>dubbo-registry-consul</artifactId>
-           <version>1.0.0</version>
-        </dependency>
-        <!-- 调用链配置依赖 -->
-        <dependency>
-           <groupId>com.jdcloud.jdsf</groupId>
-           <artifactId>dubbo-opentracing</artifactId>
-           <version>1.0.0</version>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo-jdsf</artifactId>
+            <version>2.6.7-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
