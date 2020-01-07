@@ -33,28 +33,28 @@ dubbo配置参考文档：http://dubbo.apache.org/zh-cn/docs/user/references/xml
  ### dubbo 2.7.3 兼容版本配置
   #### 注册中心配置
    xml方式配置方式：
-    <!-- 注册中心配置：协议为consul -->
-    <dubbo:registry protocol="consul" address="地址:8500,地址:8500"/>
-    或者
-    <!-- 注册中心配置：协议为consul -->
-    <dubbo:registry address="consul://地址:8500"/>
+    <!-- 注册中心配置：协议为consul -->  
+    <dubbo:registry protocol="consul" address="地址:8500,地址:8500"/>  
+    或者  
+    <!-- 注册中心配置：协议为consul -->  
+    <dubbo:registry address="consul://地址:8500"/>  
     
-   springboot配置方式：
-    启动注解：@EnableDubbo(scanBasePackages = "xxx.xxx")
-    配置文件：dubbo.registry.address=consul://127.0.0.1:8500
+   springboot配置方式：  
+    启动注解：@EnableDubbo(scanBasePackages = "xxx.xxx")  
+    配置文件：dubbo.registry.address=consul://127.0.0.1:8500  
     
   #### 调用链配置
-    配置文件：
-       dubbo.provider.filter=tracing
-       opentracing.jaeger.HttpSender.url=http://127.0.0.1:14268/api/traces
+    配置文件：  
+       dubbo.provider.filter=tracing  
+       opentracing.jaeger.HttpSender.url=http://127.0.0.1:14268/api/traces  
     
-    configuration初始化：
-       @Bean("tracing")
-       public TracingFilter tracingFilter(Tracer tracer){
-          TracingFilter tracingFilter = new TracingFilter();
-          tracingFilter.setTracer(tracer);
-          return tracingFilter;
-       }
+    configuration初始化：  
+       @Bean("tracing")  
+       public TracingFilter tracingFilter(Tracer tracer){   
+          TracingFilter tracingFilter = new TracingFilter();  
+          tracingFilter.setTracer(tracer);  
+          return tracingFilter;  
+       }  
        
  ### dubbo2.6.7兼容版本配置
     <!-- 注册中心配置：协议为consul -->
