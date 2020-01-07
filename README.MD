@@ -16,7 +16,8 @@ dubbo配置参考文档：http://dubbo.apache.org/zh-cn/docs/user/references/xml
            <artifactId>dubbo-opentracing</artifactId>
            <version>1.0.0</version>
        </dependency>
- ### dubbo 2.6.7 兼容版本，已废弃
+ ### dubbo 2.6.7 兼容版本，未上传到maven中央库
+       需单独下载 https://jdsf-demo.s3.cn-north-1.jdcloud-oss.com/dubbo-jdsf-2.6.7-SNAPSHOT.jar
        <dependency>
            <groupId>com.alibaba</groupId>
            <artifactId>dubbo-jdsf</artifactId>
