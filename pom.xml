@@ -15,10 +15,17 @@
     </modules>
 
     <dependencies>
+        <!-- 注册中心配置依赖 -->
         <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>dubbo-jdsf</artifactId>
-            <version>2.6.7-SNAPSHOT</version>
+           <groupId>com.jdcloud.jdsf</groupId>
+           <artifactId>dubbo-registry-consul</artifactId>
+           <version>1.0.0</version>
+        </dependency>
+        <!-- 调用链配置依赖 -->
+        <dependency>
+           <groupId>com.jdcloud.jdsf</groupId>
+           <artifactId>dubbo-opentracing</artifactId>
+           <version>1.0.0</version>
         </dependency>
     </dependencies>
 
