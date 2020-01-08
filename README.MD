@@ -1,7 +1,11 @@
 ## 概述
-本demo依赖的dubbo兼容版本是在dubbo-2.6.7的基础上改造的。支持了consul注册中心，jaeger调用链分析功能。
+本demo依赖的dubbo兼容版本是在dubbo官方版本的基础上改造的。支持了consul注册中心，jaeger调用链分析功能。
 dubbo配置参考文档：http://dubbo.apache.org/zh-cn/docs/user/references/xml/dubbo-service.html
 
+## 项目说明
+  其中module：database-2.6、facade-2.6、consumer-2.6 是dubbo2.6.7兼容版本的demo；
+  module：demo-client-2.7、demo-server-2.7、demo-common-2.7  是dubbo2.7.3兼容版本的demo；
+  请大家根据自己要使用的dubbo版本查看具体配置
 ## 一、maven依赖配置
   
  ### dubbo 2.6.7 兼容版本，未上传到maven中央库
@@ -65,5 +69,3 @@ dubbo配置参考文档：http://dubbo.apache.org/zh-cn/docs/user/references/xml
      <!-- 调用链配置 -->
     <dubbo:jaegerTrace traceopen="true" type="const" sampling="1" address="127.0.0.1:14268" />
 
-
-    

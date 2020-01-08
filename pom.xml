@@ -3,25 +3,17 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <groupId>com.jdcloud.jdsf</groupId>
-    <artifactId>jdsf-demo-dubbo</artifactId>
-    <packaging>pom</packaging>
+    <groupId>com.jdcloud.jdsf.dubbo.demo</groupId>
+    <artifactId>jdsf-dubbo-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
     <modules>
-        <module>consumer</module>
-        <module>facade</module>
-        <module>database</module>
+        <module>demo-client-2.7</module>
+        <module>demo-server-2.7</module>
+        <module>demo-common-2.7</module>
+        <module>database-2.6</module>
+        <module>facade-2.6</module>
+        <module>consumer-2.6</module>
     </modules>
-
-    <dependencies>
-        <!-- 单独下载引入 https://jdsf-demo.s3.cn-north-1.jdcloud-oss.com/dubbo-jdsf-2.6.7-SNAPSHOT.jar -->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>dubbo-jdsf</artifactId>
-            <version>2.6.7-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
-
 
 </project>
